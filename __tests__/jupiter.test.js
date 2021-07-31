@@ -11,5 +11,5 @@ describe('JupiterAge', () => {
     let jupiter = new JupiterAge(1);
     jupiter.calculateJupiterAge();
     expect(jupiter.ageOnJupiter).toEqual(1);
-  })
+  });
 });
