@@ -1,4 +1,4 @@
-
+import { MarsAge } from "../src/mars";
 
 describe('marsAge', () => {
 
