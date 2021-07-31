@@ -1,3 +1,4 @@
+import { MercuryAge } from "../src/mercury";
 
 describe('mercuryAge', () => {
   
