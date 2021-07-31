@@ -4,10 +4,10 @@ export class VenusAge {
     this.venusAgeConstant = 0.62;
     this.ageOnVenus = 0;
   }
-  calculateVenusAge = () => {
+  calculateVenusAge () {
     this.ageOnVenus = Math.round(this.earthAge / this.venusAgeConstant);
   } 
-  aboveOrBelowLifeExpect = () => {
+  aboveOrBelowLifeExpect () {
 
   }
 }

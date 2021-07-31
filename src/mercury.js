@@ -4,10 +4,10 @@ export class MercuryAge {
     this.mercuryAgeConstant = 0.24;
     this.ageOnMercury = 0;
   }
-  calculateMercuryAge = () => {
+  calculateMercuryAge () {
     this.ageOnMercury = Math.round(this.earthAge / this.mercuryAgeConstant);
   }
-  aboveOrBelowLifeExpect = () => {
+  aboveOrBelowLifeExpect () {
     
   }
 }

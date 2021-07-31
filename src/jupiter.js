@@ -5,7 +5,7 @@ export class JupiterAge {
     this.jupiterAgeConstant = 11.86;
     this.ageOnJupiter = 0;
   }
-  calculateJupiterAge = () => {
+  calculateJupiterAge () {
     this.ageOnJupiter = Math.round(this.earthAge / this.jupiterAgeConstant);
     if(this.ageOnJupiter < 1) {
       this.ageOnJupiter = 1;

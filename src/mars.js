@@ -5,7 +5,7 @@ export class MarsAge {
     this.marsAgeConstant = 1.88;
     this.ageOnMars = 0;
   }
-  calculateMarsAge = () => {
+  calculateMarsAge () {
     this.ageOnMars = Math.round(this.earthAge / this.marsAgeConstant);
   }
 }
