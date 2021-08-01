@@ -17,4 +17,12 @@ describe('mercuryAge', () => {
     mercury.aboveOrBelowLifeExpectancy(lifeExpectancy);
     expect(mercury.diffInExpectancyAndAge).toEqual(9);
   });
+  test('should correctly find the difference between users mercury age and life expectancy and return how far above', () => {
+    let mercury = new MercuryAge(24);
+    mercury.calculateMercuryAge();
+    let lifeExpectancy = new AvgLifeExpect("male", "active", true, true, "hs", 6);
+    lifeExpectancy.calculateAvgLifeExpectancy();
+    mercury.aboveOrBelowLifeExpectancy(lifeExpectancy);
+    expect(mercury.diffInExpectancyAndAge).toEqual(-28);
+  });
 });
