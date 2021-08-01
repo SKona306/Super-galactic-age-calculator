@@ -13,9 +13,11 @@ describe('JupiterAge', () => {
     jupiter.calculateJupiterAge();
     expect(jupiter.ageOnJupiter).toEqual(1);
   });
-  test('should find the difference between users life expectancy and jupiter age and return how many years over or under they are', () => {
+  test('should find the difference between users life expectancy and jupiter age and return how many years under they are', () => {
     let jupiter = new JupiterAge(24);
+    jupiter.calculateJupiterAge()
     let lifeExpectancy = new AvgLifeExpect("male", "active", true, true, "hs", 6);
+    lifeExpectancy.calculateAvgLifeExpectancy()
     jupiter.aboveOrBelowLifeExpectancy(lifeExpectancy);
     expect(jupiter.diffInExpectancyAndAge).toEqual(70);
   });
