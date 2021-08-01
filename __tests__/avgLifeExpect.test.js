@@ -32,4 +32,9 @@ describe('avgLifeExpect', () => {
     lifeExpectancy.calculateAvgLifeExpectancy();
     expect(lifeExpectancy.avgLifeExpect).toEqual(76);
   });
+  test('should correctly calculate users average life expectancy based on different results of questionare.', () => {
+    let lifeExpectancy = new AvgLifeExpect("female", "active", false, false, "college", 1);
+    lifeExpectancy.calculateAvgLifeExpectancy();
+    expect(lifeExpectancy.avgLifeExpect).toEqual(72);
+  });
 });
