@@ -4,8 +4,12 @@ export class MarsAge {
     this.earthAge = earthAge;
     this.marsAgeConstant = 1.88;
     this.ageOnMars = 0;
+    this.diffInExpectancyAndAge = 0;
   }
-  calculateMarsAge () {
+  calculateMarsAge() {
     this.ageOnMars = Math.round(this.earthAge / this.marsAgeConstant);
+  }
+  aboveOrBelowLifeExpectancy(lifeExpectancy) {
+    this.diffInExpectancyAndAge = lifeExpectancy.avgLifeExpect - this.ageOnMars;
   }
 }
