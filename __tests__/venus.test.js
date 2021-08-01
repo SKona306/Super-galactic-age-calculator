@@ -16,4 +16,12 @@ describe('venusAge', () => {
     venus.aboveOrBelowLifeExpectancy(lifeExpectancy);
     expect(venus.diffInExpectancyAndAge).toEqual(33);
   });
+  test('should correctly find the difference between users venus age and life expectancy and return how far above', () => {
+    let venus = new VenusAge(100);
+    venus.calculateVenusAge();
+    let lifeExpectancy = new AvgLifeExpect("male", "active", true, true, "hs", 6);
+    lifeExpectancy.calculateAvgLifeExpectancy();
+    venus.aboveOrBelowLifeExpectancy(lifeExpectancy);
+    expect(venus.diffInExpectancyAndAge).toEqual(-89);
+  });
 });
